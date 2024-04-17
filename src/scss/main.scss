@@ -87,13 +87,16 @@ $breakpoint-large: 1140px;
 
 
 // Mobile-first layout
-#root {
-    min-height: 100vh;
-    @include flex-center(column);
+body {
     background-color: $background-color;
-    font-family: $font-family;
+    overflow-x: hidden;
+}
+#root {
     background-image: $background-image-mobile;
     background-size: cover;
+    min-height: 100vh;
+    @include flex-center(column);
+    font-family: $font-family;
     padding: 76px 0;
 }
 
@@ -117,6 +120,7 @@ $breakpoint-large: 1140px;
     background-color: rgba(255, 255, 255, .75);
     backdrop-filter: blur(6px);
     transition-property: height, background-color, box-shadow;
+    transition-duration: $transition-time;
     &:hover {
         @include container-color-filter-hover();
     }
@@ -227,7 +231,7 @@ $breakpoint-large: 1140px;
         gap: 10px;
         grid-template-columns: repeat(2, 1fr);
         img {
-            border-radius: 30px;
+            border-radius: 15px;
             width: 100%;
             height: 100%;
         }
@@ -356,7 +360,6 @@ button {
 @media (min-width: $breakpoint-large) {
     #root {
         background-image: $background-image-large;
-        padding-top: 0;
         justify-content: center;
     }
     .body-content {

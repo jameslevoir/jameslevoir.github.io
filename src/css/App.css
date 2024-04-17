@@ -40,16 +40,20 @@
   font-family: Poppins-900;
   src: url(../assets/fonts/Poppins/Poppins-Black.ttf);
 }
+body {
+  background-color: #E7E7F4;
+  overflow-x: hidden;
+}
+
 #root {
+  background-image: url("/src/assets/SVG/background-mobile.svg");
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #E7E7F4;
   font-family: Poppins-300, Arial, sans-serif;
-  background-image: url("/src/assets/SVG/background-mobile.svg");
-  background-size: cover;
   padding: 76px 0;
 }
 
@@ -80,6 +84,7 @@
   background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(6px);
   transition-property: height, background-color, box-shadow;
+  transition-duration: 0.25s;
 }
 #mobile-nav-bar-header:hover {
   background-color: rgba(255, 255, 255, 0.7);
@@ -206,7 +211,7 @@
   grid-template-columns: repeat(2, 1fr);
 }
 .side-content.gallery img {
-  border-radius: 30px;
+  border-radius: 15px;
   width: 100%;
   height: 100%;
 }
@@ -330,7 +335,6 @@ button:hover {
 @media (min-width: 1140px) {
   #root {
     background-image: url("/src/assets/SVG/background.svg");
-    padding-top: 0;
     justify-content: center;
   }
   .body-content {

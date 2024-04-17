@@ -1,6 +1,5 @@
 import MainContent from '../components/MainContent'
 import SideContent from '../components/SideContent'
-import Body from "../components/Body"
 
 
 const DesignDevelopment = () => {
