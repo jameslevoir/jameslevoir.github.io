@@ -12,7 +12,7 @@ const MobileNavBar = () => {
   return (
     <>
     <div id="mobile-nav-bar-header" className={isActive ? "show" : "hide"}>
-        <img src="/public/SVG/mobile-lines.svg" onClick={toggleShow} />
+        <img src="/SVG/mobile-lines.svg" onClick={toggleShow} />
         <ul>
             <li><NavLink to="/" className="nav-link">Home</NavLink></li>
             <li><NavLink to="/design-development" className="nav-link">Design/Development</NavLink></li>
