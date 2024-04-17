@@ -13,10 +13,10 @@ const Home = () => {
                 <li>Professional experience working in the audio/visual field including live mixing, recording, and livestreaming.</li>
                 <li>Experience in leadership roles academically and professionally, from leading student organizations to coordinating volunteers.</li>
             </ul>
-            <Button link="assets/Résumé.pdf" text="View My Résumé" />
+            <Button link="/src/assets/Résumé.pdf" text="View My Résumé" />
         </MainContent>
         <SideContent content="profile-picture">
-            <img src="assets/profile-picture.jpg"></img>
+            <img src="/src/assets/profile-picture.jpg"></img>
         </SideContent>
         </>
     )
