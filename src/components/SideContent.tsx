@@ -5,7 +5,11 @@ const SideContent = (props: {children: ReactNode, content: "profile-picture" | "
 
     return (
         <div className={className}>
-            {props.children}
+        {props.content == "gallery" ? (
+            <div className="grid-container">{props.children}</div>
+        ) : (
+            props.children
+        )}
         </div>
     )
 }

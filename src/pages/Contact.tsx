@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <MainContent>
       <h1>Contact</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, cupiditate quia! Expedita pariatur impedit repudiandae officia laboriosam quod. Unde sapiente sint, alias ab placeat eaque labore ipsum porro harum pariatur fuga consequuntur distinctio sed quas explicabo. Vel facilis numquam, eligendi recusandae amet, cum praesentium expedita neque earum consectetur rerum a?</p>
+      <p>Feel free to reach out to me via <a href="https://www.linkedin.com/in/jameslevoir/" target="_blank">LinkedIn</a> or send me an email directly. I look forward to hearing from you!</p>
       <Button text="Email Me" link="mailto:jameslevoir@gmail.com" />
     </MainContent>
   )
