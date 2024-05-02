@@ -4,6 +4,7 @@ import AudioVisual from './pages/AudioVisual';
 import Contact from './pages/Contact';
 import ErrorPage from './pages/ErrorPage';
 import RootLayout from './pages/RootLayout';
+import DesignDevProjects from './pages/DesignDevProjects';
 
 import {
   createBrowserRouter,
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path="design-development" element={<DesignDevelopment />} />
+      <Route path="design-development/:projectName" element={<DesignDevProjects />} />
       <Route path="audio-visual" element={<AudioVisual />} />
       <Route path="contact" element={<Contact />} />
 

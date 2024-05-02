@@ -14,8 +14,8 @@ const MobileNavBar = () => {
 
   return (
     <>
-    <div id="mobile-nav-bar-header" className={isActive ? "show" : "hide"} onBlur={handleBlur}>
-        <img src="/SVG/mobile-lines.svg" onFocus={toggleShow} />
+    <div id="mobile-nav-bar" className={isActive ? "show" : "hide"} onBlur={handleBlur}>
+        <img src="/SVG/mobile-lines.svg" onClick={toggleShow} />
         <ul>
             <li><NavLink to="/" className="nav-link">Home</NavLink></li>
             <li><NavLink to="/design-development" className="nav-link">Design/Development</NavLink></li>
