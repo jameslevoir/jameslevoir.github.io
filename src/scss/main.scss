@@ -397,10 +397,11 @@ button {
         max-width: 900px;
     }
     .side-content {
+        max-width: 33%;
         margin: 0;
         margin-left: 16px;
+        flex-grow: 1;
         &.gallery {
-            flex-grow: 1;
             max-height: 476px;
         }
     }
