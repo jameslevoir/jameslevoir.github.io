@@ -16,7 +16,7 @@ const DesignDevProjects = () => {
     <>
     <MainContent>
         <h1 style={{textTransform: "capitalize"}}>{projectName}</h1>
-        <img src={`../public/design/full/${projectName}.jpg`} alt={`${projectName} Project`} />
+        <img src={`./public/design/full/${projectName}.jpg`} alt={`${projectName} Project`} />
     </MainContent>
     <SideContent content = {undefined}>
         <p>{aboutText[projectName as keyof typeof aboutText]}</p>
