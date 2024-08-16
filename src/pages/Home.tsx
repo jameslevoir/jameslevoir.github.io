@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <>
         <MainContent>
-            <h1>Hi, I’m James LeVoir</h1>
+            <h1>Hi, I’m James LeVoir &#128075;</h1>
             <h2>I'm a designer, developer, and AV specialist from Minnesota</h2>
             <ul>
                 <li>Academic background in Computer Science, Web Design, and Front-End Development.</li>
